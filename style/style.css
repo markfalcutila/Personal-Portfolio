@@ -252,21 +252,31 @@ a {
   text-decoration: none;
   border: none;
   background: #2d314d;
-  padding: 12px 30px;
+  padding: 12px 20px;
   border-radius: 5px;
   color: #ffff;
   margin-right: 10px;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.portfolio-list .details .view:hover {
+  opacity: 0.9;
 }
 .portfolio-list .details .demo {
   text-decoration: none;
   border: none;
   background: #1762A7;
-  padding: 12px 30px;
+  padding: 12px 20px;
   border-radius: 5px;
   color: white;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.portfolio-list .details .demo:hover {
+  opacity: 0.9;
 }
 .portfolio-list .details i {
-  margin-left: 3px;
+  margin-left: 2px;
 }
 .contact {
   margin-bottom: 30px;
