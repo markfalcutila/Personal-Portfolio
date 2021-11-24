@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Poppins:wght@200;400;500&display=swap");
+.navbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar-menu li {
+  padding: 15px 20px;
+  list-style-type: none;
+}
+.navbar-menu li a {
+  text-decoration: none;
+  color: #9698a6;
+}
+.navbar-menu li a:hover {
+  color: #2d314d;
+}
+
+.navbar-toggle {
+  cursor: pointer;
+}
+.navbar-toggle .hamburger {
+  display: none;
+}
+.navbar-toggle .close {
+  display: none;
+}
+
+@media screen and (max-width: 676px) {
+  .navbar-menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    display: block;
+    text-align: center;
+    top: 8rem;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    padding: 12px 30px;
+    background-color: #fff;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 10;
+    display: none;
+    border-radius: 5px;
+  }
+
+  .navbar-toggle .hamburger {
+    display: block;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .navbar-menu.active + .hamburger {
+    display: none;
+  }
+
+  .navbar-menu.active + .close {
+    display: block;
+  }
+
+  .navbar-menu.active {
+    display: block;
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+}
+
+.hero .left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.hero .left img {
+  height: 50px;
+  margin-top: 20px;
+}
+
+.hero .right span {
+  display: block;
+  font-weight: 400;
+}
+.hero .right h1 {
+  font-size: 55px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+.hero .right p {
+  color: #9698a6;
+  margin-bottom: 30px;
+}
+.hero .right a {
+  border: none;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #1762A7;
+  color: #Ffff;
+}
+.hero .right a:outline {
+  border: none;
+}
+
+.about {
+  margin: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.about .title {
+  text-align: center;
+}
+.about h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.about p {
+  color: #9698a6;
+}
+.about .right {
+  margin: 30px;
+  text-align: left;
+}
+.about .right a {
+  border: none;
+  text-decoration: none;
+  padding: 15px 30px;
+  border-radius: 10px;
+  background-color: #1762A7;
+  color: #Ffff;
+}
+
+.skills {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.skills .title {
+  text-align: center;
+}
+.skills h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.skills p {
+  color: #9698a6;
+}
+
+.item {
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 0;
+  margin: 10px;
+  transition: all 0.3s ease-in-out;
+  padding: 30px 10px;
+  cursor: pointer;
+}
+.item img {
+  height: 70px;
+  margin-bottom: 20px;
+}
+.item h3 {
+  font-size: 16px;
+}
+.item:hover {
+  transform: translateY(-1rem);
+}
+
+.portfolio {
+  margin: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.portfolio .title {
+  text-align: center;
+}
+.portfolio .title h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.portfolio .title p {
+  color: #9698a6;
+}
+
+.portfolio-list {
+  transition: all 0.3s ease-in-out;
+}
+.portfolio-list .details {
+  position: relative;
+  top: -2rem;
+  border: none;
+  padding: 20px;
+  border-radius: 15px;
+}
+.portfolio-list .details h3 {
+  font-size: 26px;
+  font-weight: 500;
+}
+.portfolio-list .details p {
+  margin-bottom: 30px;
+  color: #9698a6;
+}
+.portfolio-list .details .view {
+  text-decoration: none;
+  border: none;
+  background: #2d314d;
+  padding: 12px 30px;
+  border-radius: 5px;
+  color: #ffff;
+  margin-right: 10px;
+}
+.portfolio-list .details .demo {
+  text-decoration: none;
+  border: none;
+  background: #1762A7;
+  padding: 12px 30px;
+  border-radius: 5px;
+  color: white;
+}
+.portfolio-list .details i {
+  margin-left: 3px;
+}
+.contact {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact .title {
+  text-align: center;
+}
+.contact h2 {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.contact p {
+  color: #9698a6;
+}
+
+.left .contact-no {
+  display: flex;
+  flex-direction: row;
+  text-align: left;
+  margin-bottom: 30px;
+}
+.left i {
+  font-size: 40px;
+  margin-right: 20px;
+}
+.left h3 {
+  font-size: 20px;
+  font-weight: 500;
+}
+.left span {
+  display: block;
+  font-size: 16px;
+  color: #9698a6;
+}
+
+.right .form textarea {
+  width: 100%;
+  padding: 10px 30px;
+  margin-bottom: 20px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid black;
+}
+.right input[type=text], .right input[type=email] {
+  padding: 10px 30px;
+  width: 100%;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid #9698a6;
+  outline: none;
+}
+.right input[type=text]:focus, .right input[type=email]:focus {
+  border-bottom: 1px solid #31d35c;
+}
+.right button {
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #1762A7;
+  color: #Ffff;
+  outline: none;
+}
+.right button:focus {
+  outline: none;
+}
+.right button:hover {
+  opacity: 0.8;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #151e29;
+  text-align: center;
+  height: 200px;
+}
+footer p {
+  color: #9698a6;
+}
+
+.social-links {
+  padding-top: 40px;
+}
+.social-links a {
+  font-size: 35px;
+  color: #fff;
+  margin-right: 5px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-decoration: none;
+  background-color: none;
+}
+.social-links a:hover {
+  color: white;
+}/*# sourceMappingURL=style.css.map */

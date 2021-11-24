@@ -1,0 +1,26 @@
+
+    $button-bg:#1762A7;
+    $Dark-Blue: hsl(233, 26%, 24%);
+    $Lime-Green: hsl(136, 65%, 51%);
+    $Bright-Cyan: hsl(192, 70%, 51%);
+    $Grayish-Blue: hsl(233, 8%, 62%);
+    $Light-Grayish-Blue: hsl(220, 16%, 96%);
+    $Very-Light-Gray: hsl(0, 0%, 98%);
+    $White: hsl(0, 0%, 100%);
+
+    $anton-font-family: 'Anton', sans-serif;
+    $poppins-font-family: 'Poppins', sans-serif;
+
+    $bg-button:#1762A7;
+    $bg-footer:#151e29;
+    
+
+
+@import "navbar";
+@import "general";
+@import "hero";
+@import "about";
+@import "skills";
+@import "portfolio";
+@import "contact";
+@import "footer";
