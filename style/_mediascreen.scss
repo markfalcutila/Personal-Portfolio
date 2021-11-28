@@ -1,0 +1,57 @@
+@media screen and (max-width: 780px){
+
+    // HERO SECTION
+    .hero {
+        margin: 100px 40px;
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        // border-bottom: 2px solid black  ;
+        
+    }
+    .row{
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: flex;
+        
+    
+    }
+    .hero .left{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        margin-top: 50px;
+        order: 1;
+        
+        
+        img{
+            height: 50px;
+            margin-right: 20px;
+        }
+    }
+    //ABOUT SECTION
+    .about{
+        .left{
+            img{
+             margin-top: 20px;
+             margin-bottom: 30px;
+            }
+         }
+    }
+
+    // SKILLS SECTION
+    .item{
+        img{
+            height: 50px;
+            margin-bottom: 20px;
+        }
+        h3{
+            font-size: 16px;
+            
+        }      
+    }
+    
+    
+    
+}
